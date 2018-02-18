@@ -1,6 +1,6 @@
 {
   "name": "git-askpass-env",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A GIT_ASKPASS that just spews out environment variables",
   "bin": {
     "git-askpass-env": "./lib/index.js"
