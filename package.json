@@ -1,0 +1,28 @@
+{
+  "name": "git-askpass-env",
+  "version": "0.0.1",
+  "description": "A GIT_ASKPASS that just spews out environment variables",
+  "bin": {
+    "git-askpass-env": "./lib/index.js"
+  },
+  "scripts": {
+    "compile": "cross-env NODE_ENV='production' git clean -xdf lib && tsc",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/surf-build/ask-pass"
+  },
+  "author": "Paul Betts <paul@paulbetts.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/surf-build/ask-pass/issues"
+  },
+  "homepage": "https://github.com/surf-build/ask-pass",
+  "devDependencies": {
+    "@types/node": "^9.4.6",
+    "cross-env": "^3.2.4",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.3"
+  }
+}
