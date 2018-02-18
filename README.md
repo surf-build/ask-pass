@@ -1,4 +1,4 @@
-# git-ask-pass-env: A GIT_ASKPASS that just spits out environment variables
+# git-askpass-env: A GIT_ASKPASS that just spits out environment variables
 
 This is an implementation of GIT_ASKPASS that just spits out an environment variable for the username / password. This code is based on ask-pass from https://github.com/desktop/desktop.
 
@@ -13,14 +13,14 @@ PS: if your goal is to clone via a Personal OAuth token, set `GIT_ASKPASS_USER` 
 Outside of a node project:
 
 ```
-export GIT_ASKPASS="npx git-ask-pass-env"
+export GIT_ASKPASS="npx git-askpass-env"
 ```
 
 Inside a node project, perhaps with [Dugite](https://github.com/desktop/dugite):
 
 ```
-npm i --save git-ask-pass-env
+npm i --save git-askpass-env
 
 // Later, in your JS
-process.env.GIT_ASKPASS='git-ask-pass-env'
+process.env.GIT_ASKPASS='git-askpass-env'
 ```
