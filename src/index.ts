@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 function responseForPrompt(prompt: string, username: string, password: string): string | null {
   if (prompt.startsWith('Username')) {
     return username;
